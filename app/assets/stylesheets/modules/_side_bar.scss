@@ -9,10 +9,24 @@
     &__box {
       height: 20px;
       width: 100%;
-      background-color: #ffffff;
       line-height: 20px;
       display:flex;
       justify-content: space-between;
+      &__username {
+        font-weight: bold;
+        color: $white;
+      }
+      &__menu {
+        display: flex;
+        text-align: right;
+        &__new-group {
+          color: $white;
+          margin-right: 5px;
+        }
+        &__edit-user {
+          color: $white;
+        }
+      }
     }
   }
   &__group-list {

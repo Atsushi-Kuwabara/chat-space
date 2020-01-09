@@ -2,8 +2,11 @@
   .sidebar__user
     .sidebar__user__box
       .sidebar__user__box__username
-        name
+        名前
       .sidebar__user__box__menu
-        icon
+        = link_to "#", class: "sidebar__user__box__menu__new-group" do
+          %i.fas.fa-edit
+        = link_to "#", class: "sidebar__user__box__menu__edit-user" do
+          %i.fas.fa-cog
   .sidebar__group-list
     グループ
