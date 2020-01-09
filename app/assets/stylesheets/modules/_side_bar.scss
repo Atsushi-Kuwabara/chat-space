@@ -3,4 +3,11 @@
   width: 300px;
   height: 100vh;
   float: left;
+  &__user {
+    height: 100px;
+  }
+  &__group-list {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+  }
 }
