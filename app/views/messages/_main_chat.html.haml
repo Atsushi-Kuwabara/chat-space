@@ -1,7 +1,28 @@
 .main-chat
   .main-chat__group-info
-    グループ情報
-  .main-chat__message-list
-    メッセージを表示
+    .main-chat__group-info__left
+      .main-chat__group-info__left__name
+        グループ1
+      .main-chat__group-info__left__members
+        Member：名前
+    = link_to "#", class: "main-chat__group-info__right" do
+      Edit
+  .main-chat__messages
+    .main-chat__messages__message
+      .main-chat__messages__message__upper-info
+        .main-chat__messages__message__upper-info__username
+          名前
+        .main-chat__messages__message__upper-info__date
+          2020/01/10(Fri) 17:28:39
+      .main-chat__messages__message__text
+        メッセージ1
+    .main-chat__messages__message
+      .main-chat__messages__message__upper-info
+        .main-chat__messages__message__upper-info__username
+          名前
+        .main-chat__messages__message__upper-info__date
+          2020/01/10(Fri) 17:28:48
+      .main-chat__messages__message__text
+        メッセージ2
   .main-chat__message-form
     メッセージ入力
