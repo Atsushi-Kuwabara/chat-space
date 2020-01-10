@@ -4,10 +4,58 @@
   &__group-info {
     height: 100px;
     border-bottom: solid 1px #eeeeee;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    &__left {
+      padding-top: 35px;
+      &__name {
+        font-size: 20px;
+        color: $namecolor;
+        margin-bottom: 15px;
+      }
+      &__members {
+        font-size: 12px;
+        color: $right-gray;
+      }
+    }
+    &__right {
+      margin-top: 30px;
+      padding: 0 20px;
+      width: 72px;
+      height: 40px;
+      color: $edit-btn;
+      border: 1px solid $edit-btn;
+      text-align: center;
+      line-height: 40px;
+      text-decoration: none;
+    }
   }
-  &__message-list {
+  &__messages {
     background-color: #fafafa;
     height: calc(100vh - 190px);
+    padding: 46px 40px;
+    &__message {
+      padding-bottom: 40px;
+      &__upper-info {
+        margin-bottom: 10px;
+        display: flex;
+        &__username {
+          color: $namecolor;
+          font-weight: bold;
+        }
+        &__date {
+          margin-left: 10px;
+          color: $right-gray;
+          font-size: 12px;
+        }
+      }
+      &__text {
+        font-size: 14px;
+        color: $message-color;
+        margin-bottom: 10px;
+      }
+    }
   }
   &__message-form {
     background-color: #d2d2d2;
