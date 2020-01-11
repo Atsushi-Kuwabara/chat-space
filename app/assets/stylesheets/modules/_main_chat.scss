@@ -1,5 +1,5 @@
 .main-chat {
-  background-color: #ffffff;
+  background-color: $white;
   width: calc(100vw - 300px);
   &__group-info {
     height: 100px;
@@ -24,8 +24,8 @@
       padding: 0 20px;
       width: 72px;
       height: 40px;
-      color: $edit-btn;
-      border: 1px solid $edit-btn;
+      color: $skyblue;
+      border: 1px solid $skyblue;
       text-align: center;
       line-height: 40px;
       text-decoration: none;
@@ -60,5 +60,35 @@
   &__message-form {
     background-color: #d2d2d2;
     height: 90px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    &__inputbox {
+      width: 100%;
+      position: relative;
+      &__text {
+        padding-left: 10px;
+        padding-right: 40px;
+        border: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+      &__file {
+        position: absolute;
+        line-height: 60px;
+        right: 15px;
+        &__label {
+          display: none;
+        }
+      }
+    }
+    &__btn {
+      margin-left: 15px;
+      padding: 0 30px;
+      border: none;
+      background-color: $skyblue;
+      color: $white;
+    }
   }
 }
