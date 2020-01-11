@@ -25,4 +25,9 @@
       .main-chat__messages__message__text
         メッセージ2
   .main-chat__message-form
-    メッセージ入力
+    .main-chat__message-form__inputbox
+      %input{type: "text", class: "main-chat__message-form__inputbox__text", placeholder: "type a message"} 
+      %label.main-chat__message-form__inputbox__file
+        %i.far.fa-image.fa-2x
+        %input{type: "file", class: "main-chat__message-form__inputbox__file__label"}
+    %input{type: "submit", class: "main-chat__message-form__btn", value: "Send"}
