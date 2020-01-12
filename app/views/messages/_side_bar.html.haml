@@ -2,9 +2,9 @@
   .sidebar__user
     .sidebar__user__box
       .sidebar__user__box__username
-        名前
+        = current_user.name
       .sidebar__user__box__menu
-        = link_to "#", class: "sidebar__user__box__menu__new-group" do
+        = link_to edit_user_path(current_user), class: "sidebar__user__box__menu__new-group" do
           %i.fas.fa-edit
         = link_to "#", class: "sidebar__user__box__menu__edit-user" do
           %i.fas.fa-cog
