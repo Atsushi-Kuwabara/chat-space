@@ -11,12 +11,12 @@
       padding-top: 35px;
       &__name {
         font-size: 20px;
-        color: $namecolor;
+        color: $black;
         margin-bottom: 15px;
       }
       &__members {
         font-size: 12px;
-        color: $right-gray;
+        color: $light_gray;
       }
     }
     &__right {
@@ -24,8 +24,8 @@
       padding: 0 20px;
       width: 72px;
       height: 40px;
-      color: $skyblue;
-      border: 1px solid $skyblue;
+      color: $light_blue;
+      border: 1px solid $light_blue;
       text-align: center;
       line-height: 40px;
       text-decoration: none;
@@ -41,18 +41,18 @@
         margin-bottom: 10px;
         display: flex;
         &__username {
-          color: $namecolor;
+          color: $black;
           font-weight: bold;
         }
         &__date {
           margin-left: 10px;
-          color: $right-gray;
+          color:$light_gray;
           font-size: 12px;
         }
       }
       &__text {
         font-size: 14px;
-        color: $message-color;
+        color: $black;
         margin-bottom: 10px;
       }
     }
@@ -87,7 +87,7 @@
       margin-left: 15px;
       padding: 0 30px;
       border: none;
-      background-color: $skyblue;
+      background-color: $light_blue;
       color: $white;
     }
   }
