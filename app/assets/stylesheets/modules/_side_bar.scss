@@ -36,12 +36,17 @@
     &__list {
       margin-bottom: 40px;
       color: $white;
-      &__name {
-        font-size: 15px;
-        margin-bottom: 5px;
-      }
-      &__message {
-        font-size: 11px;
+      &__link {
+        text-decoration: none;
+        &__name {
+          font-size: 15px;
+          margin-bottom: 5px;
+          color: $white;
+        }
+        &__message {
+          font-size: 11px;
+          color: $white;
+        }
       }
     }
   }
