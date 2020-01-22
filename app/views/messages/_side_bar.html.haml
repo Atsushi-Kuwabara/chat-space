@@ -4,18 +4,15 @@
       .sidebar__user__box__username
         = current_user.name
       .sidebar__user__box__menu
-        = link_to edit_user_path(current_user), class: "sidebar__user__box__menu__new-group" do
-          %i.fas.fa-edit
-        = link_to new_group_path(current_user), class: "sidebar__user__box__menu__edit-user" do
-          %i.fas.fa-cog
+        = link_to new_group_path do
+          %i.fas.fa-edit.sidebar__user__box__menu__new-group
+        = link_to edit_user_path(current_user.id) do
+          %i.fas.fa-cog.sidebar__user__box__menu__edit-user
   .sidebar__groups
-    .sidebar__groups__list
-      .sidebar__groups__list__name
-        グループ1
-      .sidebar__groups__list__message
-        まだメッセージがありません
-    .sidebar__groups__list
-      .sidebar__groups__list__name
-        グループ2
-      .sidebar__groups__list__message
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .sidebar__groups__list
+        = link_to '#', class: "sidebar__groups__list__link" do
+          .sidebar__groups__list__link__name
+            = group.name
+          .sidebar__groups__list__link__message
+            まだメッセージがありません
