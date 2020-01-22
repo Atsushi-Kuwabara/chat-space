@@ -2,9 +2,10 @@
 @import "mixin/clearfix";
 @import "mixin/color";
 @import "modules/messages";
-@import "modules/user.scss";
+@import "modules/user";
 @import "font-awesome-sprockets";
 @import "./font-awesome";
 @import "modules/side_bar";
 @import "modules/main_chat";
-@import "modules/flash.scss";
+@import "modules/flash";
+@import "modules/group";
