@@ -2,32 +2,19 @@
   .main-chat__group-info
     .main-chat__group-info__left
       .main-chat__group-info__left__name
-        グループ1
+        = @group.name
       .main-chat__group-info__left__members
-        Member：名前
+        Member：#{@members}
     = link_to "#", class: "main-chat__group-info__right" do
       Edit
   .main-chat__messages
-    .main-chat__messages__message
-      .main-chat__messages__message__upper-info
-        .main-chat__messages__message__upper-info__username
-          名前
-        .main-chat__messages__message__upper-info__date
-          2020/01/10(Fri) 17:28:39
-      .main-chat__messages__message__text
-        メッセージ1
-    .main-chat__messages__message
-      .main-chat__messages__message__upper-info
-        .main-chat__messages__message__upper-info__username
-          名前
-        .main-chat__messages__message__upper-info__date
-          2020/01/10(Fri) 17:28:48
-      .main-chat__messages__message__text
-        メッセージ2
+    = render @messages
   .main-chat__message-form
     .main-chat__message-form__inputbox
-      %input{type: "text", class: "main-chat__message-form__inputbox__text", placeholder: "type a message"} 
-      %label.main-chat__message-form__inputbox__file
-        %i.far.fa-image.fa-2x
-        %input{type: "file", class: "main-chat__message-form__inputbox__file__label"}
-    %input{type: "submit", class: "main-chat__message-form__btn", value: "Send"}
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: "main-chat__message-form__inputbox__text", placeholder: "type a message"
+        .main-chat__message-form__inputbox__file
+          = f.label :image, class: 'main-chat__message-form__inputbox__file__image' do
+            = icon('fas', 'image', class: 'main-chat__message-form__inputbox__file__icon')
+            = f.file_field :image, class: 'main-chat__message-form__inputbox__file__label'
+        = f.submit 'Send', class: 'main-chat__message-form__inputbox__btn'
