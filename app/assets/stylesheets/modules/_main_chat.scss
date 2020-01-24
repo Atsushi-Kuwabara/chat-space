@@ -71,24 +71,27 @@
         padding-right: 40px;
         border: none;
         height: 100%;
-        width: 100%;
+        width: 80%;
         position: absolute;
       }
       &__file {
+        width: 25%;
         position: absolute;
-        line-height: 60px;
-        right: 15px;
+        right: 5px;
+        line-height: 55px;
         &__label {
           display: none;
         }
       }
-    }
-    &__btn {
-      margin-left: 15px;
-      padding: 0 30px;
-      border: none;
-      background-color: $light_blue;
-      color: $white;
+      &__btn {
+        height: 50px;
+        float: right;
+        margin-left: 15px;
+        padding: 0 30px;
+        border: none;
+        background-color: $light_blue;
+        color: $white;
+      }
     }
   }
 }
