@@ -13,7 +13,7 @@
     .main-chat__message-form__inputbox
       = form_for [@group, @message] do |f|
         = f.text_field :content, class: "main-chat__message-form__inputbox__text", placeholder: "type a message"
-        .main-chat__message-form__inputbox__file
+        -# .main-chat__message-form__inputbox__file
           = f.label :image, class: 'main-chat__message-form__inputbox__file__image' do
             = icon('fas', 'image', class: 'main-chat__message-form__inputbox__file__icon')
             = f.file_field :image, class: 'main-chat__message-form__inputbox__file__label'
