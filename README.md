@@ -1,4 +1,4 @@
-# TECH::EXPERTのカリキュラムで作成した、chatアプリです。
+TECH::EXPERTのカリキュラムで作成した、chatアプリです。
 ## App URL
   http://3.114.212.202/
 
