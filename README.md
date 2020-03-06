@@ -1,3 +1,7 @@
+# TECH::EXPERTのカリキュラムで作成した、chatアプリです。
+## App URL
+  http://3.114.212.202/
+
 # DB設計
 
 ## users table
